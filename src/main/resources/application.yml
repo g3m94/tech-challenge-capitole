@@ -5,6 +5,14 @@ spring:
     url: r2dbc:h2:mem:///testdb
     username: sa
     password: sa
+    properties:
+      logging:
+        level: TRACE
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true # Formatea las consultas SQL en el log
   h2:
     console:
       enabled: true
@@ -13,3 +21,18 @@ spring:
       mode: always
       schema-locations: classpath:schema.sql
       data-locations: classpath:data.sql
+
+logging:
+  level:
+    io:
+      r2dbc:
+        h2: DEBUG
+        spi:
+          ConnectionFactory: DEBUG
+    org:
+      springframework:
+        data:
+          r2dbc:
+            core: DEBUG
+        r2dbc:
+          core: DEBUG

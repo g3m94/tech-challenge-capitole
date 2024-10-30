@@ -1,7 +1,7 @@
 package com.tech.capitole.challenge;
 
 import com.tech.capitole.challenge.controller.PricesController;
-import com.tech.capitole.challenge.service.PricesService;
+import com.tech.capitole.challenge.service.impl.PricesService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
