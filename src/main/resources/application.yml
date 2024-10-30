@@ -3,9 +3,13 @@ spring:
     name: capitole-challenge
   r2dbc:
     url: r2dbc:h2:mem:///testdb
+    username: sa
+    password: sa
   h2:
     console:
       enabled: true
   sql:
     init:
       mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
