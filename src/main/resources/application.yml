@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: capitole-challenge
+  r2dbc:
+    url: r2dbc:h2:mem:///testdb
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
