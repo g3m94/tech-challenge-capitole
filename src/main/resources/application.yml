@@ -19,8 +19,8 @@ spring:
   sql:
     init:
       mode: always
-      schema-locations: classpath:schema.sql
-      data-locations: classpath:data.sql
+      schema-locations: classpath:h2config/schema.sql
+      data-locations: classpath:h2config/data.sql
 
 logging:
   level:
