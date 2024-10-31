@@ -13,3 +13,12 @@ spring:
       mode: always
       schema-locations: classpath:h2config/schema.sql
       data-locations: classpath:h2config/data.sql
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          reactive: DEBUG
+        r2dbc: DEBUG
+    root: ERROR
